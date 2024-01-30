@@ -1,0 +1,83 @@
+/* general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 8px 15px;
+    font-size: 24px;
+
+}
+
+/* menu */
+.menu-page {
+    display: flex;
+    flex-direction: column;
+    /* Display links in a column */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.menu-page li {
+    list-style: none;
+    margin: -20px;
+}
+
+.menu-page a {
+    text-decoration: none;
+    font-size: 180px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* home */
+#home {
+    font-size: 180px;
+    color: #000000;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#home h1:hover {
+    animation: changeText 1s forwards; /* Apply the animation on hover */
+}
+
+@keyframes changeText {
+    from { content: "NICOLAS"; }
+    to { content: "BUSCEMI"; }
+}
+/* About */
+#about {
+    background-color: #000000;
+}
+
+/* Portofolio */
+#portofolio {
+    background-color: #ffffff;
+}
+
+/* Contact */
+#contact {
+    background-color: #ffffff;
+}
