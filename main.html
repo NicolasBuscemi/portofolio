@@ -12,7 +12,8 @@
 
     <header>
         <div class="logo">THESAINT</div>
-        <div class="menu"><a href="menu.html">MENU</a></div>
+        <div class="menu"><a href="menu.html">MENU</a>
+        </div>
     </header>
 
     <section id="home">
@@ -20,16 +21,43 @@
     </section>
 
     <section id="about">
-        <!-- About Section Content -->
+        <h2>HELLO, I'M NICOLAS SANTO A. BUSCEMI,</h2>
+        <p> A PASSIONATE MULTIMEDIA MAVEN WEAVING VISUAL STORIES,</p>
+        <p> CRAFTING CAPTIVATING GRAPHICS, AND BRINGING WEBSITES TO LIFE.</p>
+        <p>Join me on this creative journey where pixels dance and ideas flourish.</p>
     </section>
 
     <section id="portfolio">
-        <!-- Portfolio Section Content -->
+        <div class="showcase-container">
+            <div class="showcase">
+                <!-- Your first showcase content goes here -->
+                <img src="" alt="Project 1">
+            </div>
+            <div class="showcase">
+                <!-- Your second showcase content goes here -->
+                <img src="project2.jpg" alt="Project 2">
+            </div>
+            <!-- Add more showcases as needed -->
+
+            <!-- Navigation arrows -->
+            <div class="arrow left" onclick="scrollShowcase(-1)">❮</div>
+            <div class="arrow right" onclick="scrollShowcase(1)">❯</div>
+        </div>
     </section>
 
     <section id="contact">
         <!-- Contact Section Content -->
     </section>
+
+    <script>
+        document.querySelector('#home h1').addEventListener('mouseover', function () {
+            this.textContent = 'BUSCEMI';
+        });
+
+        document.querySelector('#home h1').addEventListener('mouseout', function () {
+            this.textContent = 'NICOLAS';
+        });
+    </script>
 
 </body>
 
