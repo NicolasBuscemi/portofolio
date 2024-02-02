@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    position: relative;
 }
 
 header {
@@ -37,7 +38,9 @@ header {
     justify-content: center;
     height: 100vh;
 }
-
+.menu-page ul {
+    text-align: center;
+}
 .menu-page li {
     list-style: none;
     margin: -20px;
@@ -63,7 +66,7 @@ header {
 
 #home h1:hover {
     animation: changeText 1s forwards;
-    /* Apply the animation on hover */
+   
 }
 
 @keyframes changeText {
@@ -86,12 +89,12 @@ header {
 
 
 #about h2 {
-    font-size: 80px; /* Adjust the font size as needed */
+    font-size: 70px; /* Adjust the font size as needed */
     margin-bottom: 20px; /* Add some bottom margin */
 }
 
 #about p {
-    font-size: 80px; /* Adjust the font size as needed */
+    font-size: 70px; /* Adjust the font size as needed */
     text-align: justify; /* Justify-align the paragraph text */
     margin: 20px 40px; /* Add some vertical margin */
     text-align: center;
@@ -99,46 +102,5 @@ header {
 
 /* Portofolio */
 
- #portfolio {
-    background-color: #ffffff; /* White background color for the portfolio section */
-    color: #333333; /* Dark text color */
-    padding: 20px;
-    text-align: center; /* Center-align the content */
-}
 
-/* Showcase container styles */
-.showcase-container {
-    width: 80%; /* Adjust the width as needed */
-    overflow: hidden; /* Hide overflowing content */
-    margin: 0 auto; /* Center the container */
-    position: relative;
-}
-
-/* Individual showcase styles */
-.showcase {
-    display: inline-block;
-    width: 100%; /* Each showcase takes up the full width of the container */
-    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
-}
-
-/* Navigation arrows styles */
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    cursor: pointer;
-    color: #333333; /* Dark arrow color */
-}
-
-.arrow.left {
-    left: 10px;
-}
-
-.arrow.right {
-    right: 10px;
-}
 /* Contact */
-#contact {
-    background-color: #ffffff;
-}
