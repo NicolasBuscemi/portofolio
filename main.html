@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
     <title>THESAINT Portfolio</title>
 </head>
 
@@ -20,34 +21,23 @@
         <h1>NICOLAS</h1>
     </section>
 
-    <section id="about">
+    <section id="about" class="scroll-section">
         <h2>HELLO, I'M NICOLAS SANTO A. BUSCEMI,</h2>
         <p> A PASSIONATE MULTIMEDIA MAVEN WEAVING VISUAL STORIES,</p>
         <p> CRAFTING CAPTIVATING GRAPHICS, AND BRINGING WEBSITES TO LIFE.</p>
         <p>Join me on this creative journey where pixels dance and ideas flourish.</p>
     </section>
 
-    <section id="portfolio">
-        <div class="showcase-container">
-            <div class="showcase">
-                <!-- Your first showcase content goes here -->
-                <img src="" alt="Project 1">
-            </div>
-            <div class="showcase">
-                <!-- Your second showcase content goes here -->
-                <img src="project2.jpg" alt="Project 2">
-            </div>
-            <!-- Add more showcases as needed -->
-
-            <!-- Navigation arrows -->
-            <div class="arrow left" onclick="scrollShowcase(-1)">❮</div>
-            <div class="arrow right" onclick="scrollShowcase(1)">❯</div>
-        </div>
+    <section id="portfolio" class="scroll-section">
+        <!-- Content of the portfolio section -->
     </section>
 
-    <section id="contact">
-        <!-- Contact Section Content -->
+    <section id="contact" class="scroll-section">
+        <!-- Content of the contact section -->
     </section>
+   
+
+   
 
     <script>
         document.querySelector('#home h1').addEventListener('mouseover', function () {
