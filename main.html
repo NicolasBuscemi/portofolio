@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="path-to-fonts/font.css">
     <title>THESAINT Portfolio</title>
 </head>
 
@@ -13,8 +13,9 @@
 
     <header>
         <div class="logo">THESAINT</div>
-        <div class="menu"><a href="menu.html">MENU</a>
-        </div>
+        <div class="menu">
+            <button id="nightModeToggle" onclick="toggleNightMode()">NIGHT</button>
+            <a href="menu.html">MENU</a></div>
     </header>
 
     <section id="home">
@@ -22,10 +23,10 @@
     </section>
 
     <section id="about" class="scroll-section">
-        <h2>HELLO, I'M NICOLAS SANTO A. BUSCEMI,</h2>
+        <!--<h2>HELLO, I'M NICOLAS SANTO A. BUSCEMI,</h2>
         <p> A PASSIONATE MULTIMEDIA MAVEN WEAVING VISUAL STORIES,</p>
         <p> CRAFTING CAPTIVATING GRAPHICS, AND BRINGING WEBSITES TO LIFE.</p>
-        <p>Join me on this creative journey where pixels dance and ideas flourish.</p>
+        <p>Join me on this creative journey where pixels dance and ideas flourish.</p>-->
     </section>
 
     <section id="portfolio" class="scroll-section">
@@ -35,20 +36,8 @@
     <section id="contact" class="scroll-section">
         <!-- Content of the contact section -->
     </section>
-   
 
-   
-
-    <script>
-        document.querySelector('#home h1').addEventListener('mouseover', function () {
-            this.textContent = 'BUSCEMI';
-        });
-
-        document.querySelector('#home h1').addEventListener('mouseout', function () {
-            this.textContent = 'NICOLAS';
-        });
-    </script>
-
+    <script src="scripts.js"></script>
 </body>
 
 </html>
