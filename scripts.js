@@ -36,3 +36,14 @@ function toggleNightMode() {
     const nightModeToggle = document.getElementById('nightModeToggle');
     nightModeToggle.textContent = body.classList.contains('night-mode') ? 'LIGHT' : 'NIGHT';
 }
+
+
+const customCursor = document.getElementById('custom-cursor');
+
+// Function to update the position of the custom cursor
+function updateCustomCursorPosition(event) {
+    customCursor.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+}
+
+// Add event listener to update custom cursor position on mouse movement
+document.addEventListener('mousemove', updateCustomCursorPosition);

@@ -15,7 +15,25 @@ body {
     background-color: var(--background-light);
     color: var(--text-light);
     transition: background-color 0.5s, color 0.5s;
+    cursor: none;
 }
+
+
+#custom-cursor {
+    position: fixed;
+    cursor: none;
+    top: -50px; /* Adjust initial position of cursor */
+    left: -50px; /* Adjust initial position of cursor */
+    width: 100px; /* Adjust width of cursor */
+    height: 100px; /* Adjust height of cursor */
+    background-color: rgba(0, 0, 255, 0.5); /* Adjust color and opacity */
+    border-radius: 50%; /* Ensure cursor appears as a circle */
+    pointer-events: none; /* Ensure cursor doesn't interfere with mouse events */
+    z-index: 9999; /* Ensure cursor appears above other content */
+    transition: transform 0.2s ease-out; /* Smooth transition for fluid movement */
+}
+
+
 
 h1,
 h2,
@@ -26,7 +44,7 @@ a {
 
 h1 {
     font-family: 'Arial', sans-serif;
-   
+
 }
 
 h2 {
@@ -36,7 +54,7 @@ h2 {
 
 p {
     font-family: 'Arial', sans-serif;
-    
+
 }
 
 header {
@@ -79,13 +97,13 @@ body.night-mode header {
 
 body.night-mode .logo {
     color: var(--text-light);
-   
+
 }
 
 body.night-mode #nightModeToggle {
-    
+
     color: var(--text-light);
-  
+
 }
 
 body.night-mode h1,
