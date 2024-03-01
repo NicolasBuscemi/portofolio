@@ -5,44 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
     <link rel="stylesheet" href="path-to-fonts/font.css">
     <title>THESAINT Portfolio</title>
 </head>
 
 <body>
-
-    <header>
+    <nav id="navbar">
         <div class="logo">THESAINT</div>
         <div class="menu">
             <button id="nightModeToggle" onclick="toggleNightMode()">NIGHT</button>
-            <a href="menu.html">MENU</a></div>
-    </header>
+            <a href="#" id="openMenu">MENU</a>
+        </div>
+    </nav>
+    <div id="menuOverlay">
+        <div id="menuContent">
+            <div class="closeText">
+                <a href="#" id="closeMenu">CLOSE</a>
+            </div>
 
-    <section id="home">
-        <h1>NICOLAS</h1>
-    </section>
+            <div class="menuText">
+                <ul>
+                    <li><a href="#about" id="aboutLink">ABOUT</a></li>
+                    <li><a href="#portfolio" id="portfolioLink">PORTFOLIO</a></li>
+                    <li><a href="#contact" id="contactLink">CONTACT</a></li>
+                </ul>
+            </div>
 
-    <section id="about" class="scroll-section">
-        <!--<h2>HELLO, I'M NICOLAS SANTO A. BUSCEMI,</h2>
-        <p> A PASSIONATE MULTIMEDIA MAVEN WEAVING VISUAL STORIES,</p>
-        <p> CRAFTING CAPTIVATING GRAPHICS, AND BRINGING WEBSITES TO LIFE.</p>
-        <p>Join me on this creative journey where pixels dance and ideas flourish.</p>-->
-    </section>
+        </div>
+    </div>
+    <div class="holder">
+        <header>
+            <div id="home" class="initial-content">
+                <h1>NICOLAS</h1>
+            </div>
+        </header>
 
-    <section id="portfolio" class="scroll-section">
-        <!-- Content of the portfolio section -->
-    </section>
 
-    <section id="contact" class="scroll-section">
-        <!-- Content of the contact section -->
-    </section>
+        <section id="about" class="overlapping-content">
+            <div class="abouttext">HELLO, I'M NICOLAS SANTO A. BUSCEMI, A PASSIONATE MULTIMEDIA MAVEN WEAVING
+                VISUAL
+                STORIES, CRAFTING
+                CAPTIVATING GRAPHICS, AND BRINGING WEBSITES TO LIFE.</div>
+            <p><a href="#contact"></a>Join me on this creative journey where pixels dance and ideas flourish.
+            </p>
+        </section>
+        <div id="portfolio" class="revealed-content">
+            <div class="container">
+                <div class="box box-1" style="--img: url(img/Skull.jpg);" data-text="LAMBO"></div>
+                <div class="box box-2" style="--img: url(img/Skull.jpg);" data-text="MULTIPHARMA"></div>
+                <div class="box box-3" style="--img: url(img/Skull.jpg);" data-text="MIXOMNIA"></div>
+                <div class="box box-4" style="--img: url(img/Skull.jpg);" data-text="VERBIEST"></div>
+                <div class="box box-5" style="--img: url(img/Skull.jpg);" data-text="WINE NOT">
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="scrolling-text">
+
+            <span class="sliding">
+                <span>CONTACT</span>
+                <span>CONTACT</span>
+                <span> - </span>
+                <span>CONTACT</span>
+                <span>CONTACT</span>
+            </span>
+            <div class="wrapper">
+                <span class="sliding">
+                    <span>CONTACT</span>
+                    <span>CONTACT</span>
+                    <span> - </span>
+                    <span>CONTACT</span>
+                    <span>CONTACT</span>
+                </span>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
 
     <div id="custom-cursor"></div>
-
-
     <script src="scripts.js"></script>
 </body>
 
